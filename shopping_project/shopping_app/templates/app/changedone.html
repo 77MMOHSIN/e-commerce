@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'app/base.html' %}
+    {% load static %}
+    {% block title %}Buy Now{% endblock title %}
+    {% block main-content %}
+    <div class="container my-5">
+     <div class="row">
+     <h3>Welcome  to my profiles</h3>
+      <div class="col-sm-2 border-end">
+       <ul class="list-unstyled">
+        <li class="d-grid"><a href="{% url 'login' %}" class="btn btn-primary">Login</a></li>
+       </ul>
+      </div>
+      <div class="col-sm-9 offset-sm-1 text-center">
+        <h3>password change Successfully!!!</h3>
+        {% comment %} <div><iframe src="https://media.giphy.com/media/MelhioWPAo6k4Q6BTp/giphy.gif" frameborder="0" width='200' height='200'class='giphy' allowFullScreen></iframe></div> {% endcomment %}
+      </div>
+     </div>
+    </div>
+    {% endblock main-content %}  
+</body>
+</html>

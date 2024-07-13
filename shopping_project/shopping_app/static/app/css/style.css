@@ -1,0 +1,83 @@
+.owl-carousel .item{
+ /* border: 1px solid black; */
+ font-size: 24px;
+ text-align: center;
+ margin-top: 20px;;
+}
+
+.owl-next{
+ float:right;
+}
+.owl-prev{
+ float:left;
+}
+.owl-prev span{
+ font-size: 24px;
+ font-weight: bold;
+}
+.owl-next span{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.marq{
+    background-color: rgb(51, 51, 153);
+    color: #ffffff;
+    height: px;
+    
+}
+#border{
+    color: aliceblue;
+    background-color: rgba(57, 57, 61, 0.9);
+    border: 1px solid black;
+    height: 250px;
+    width: 100%;
+   
+}
+#wh{
+    color: #ffffff;
+}
+#gh{
+    height: 400px;
+    width: 90%;
+}
+#th{
+    height: 150px;
+}
+
+.animated-box {
+     /* width: 100px;*/
+    height: 300px; 
+    /* background-color: #3498db;  */
+    background: url('../images/banner/cream2.jpg');
+    position: relative;
+    animation: bounce 30s ease infinite;
+  }
+
+  /* Define the animation */
+  @keyframes bounce {
+    0%{
+      /* transform: translateY(0); */
+      background: url('../images/banner/bird2.jpg');
+      padding: 12px;
+    }
+    50% {
+      /* transform: translateY(-30px); */
+      background: url('../images/banner/bird3.jpg');
+
+
+    }
+    70% {
+        /* transform: translateY(-30px); */
+        background: url('../images/banner/fm3.jpg');
+        
+  
+      }
+      90% {
+        /* transform: translateY(-30px); */
+        background: url('../images/banner/bodyspray.jpg');
+        
+  
+      }
+  }
+

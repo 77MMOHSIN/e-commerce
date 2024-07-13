@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'app/base.html' %}
+    {% load static %}
+    {% block title %}Empty Card{% endblock title %}
+    {% block main-content %}
+    <div class="container my-5">
+     <div class="row">
+      <div class="col-sm-2 border-end">
+       <ul class="list-unstyled">
+      </div>
+      <div class="col-sm-9 offset-sm-1 text-center">
+        <h3>you have no product in your Cart!!!</h3>
+        <img src="{% static 'app/images/emptycart.png' %}" alt="" width='200px'>
+        {% comment %} <div><iframe src="https://media.giphy.com/media/MelhioWPAo6k4Q6BTp/giphy.gif" frameborder="0" width='200' height='200'class='giphy' allowFullScreen></iframe></div> {% endcomment %}
+      </div>
+     </div>
+    </div>
+    {% endblock main-content %}  
+</body>
+</html>
